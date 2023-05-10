@@ -59,7 +59,7 @@
     box-sizing: border-box;
     font-family: inherit;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 33px;
     font-weight: 500;
     text-align: center;
     color: #FFFFFF;
@@ -71,29 +71,130 @@
 
   .wrapper {
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0;
   }
 
   /* header */
 
   .page-header {
-    display: flex;
-    justify-content: end;
     width: 1920px;
   }
 
-  .main-nav {
+  .main-nav__wrapper {
+    display: grid;
+    grid-template-columns: 300px 1fr 1fr 50px;
+    align-items: center;
+  }
+
+  /*.main-nav {
     width: 405px;
     margin: 0 auto;
     padding: 0 160px;
     box-sizing: border-box;
+  }*/
+
+  .main-nav__logo {
+    grid-column: 1/2;
+    margin: 0 auto;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
   }
 
   .main-nav__list {
+    grid-column: 3/4;
     display: flex;
-    flex-direction: row;
-    width: 405px;
+    justify-content: space-between;
+    width: 520px;
     margin: 0;
     padding: 0;
     list-style-type: none;
+  }
+
+  .main-nav__user-list {
+    grid-column: 4/5;
+    align-items: center;
+  }
+
+  .site-list__item {
+    margin-left: 20px;
+  }
+
+  .site-list__link {
+    display: block;
+    padding-top: 7px;
+    padding-left: 13px;
+    padding-bottom: 9px;
+    padding-right: 13px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    color: #050215;
+    text-decoration: none;
+  }
+
+  .site-list__link--current {  
+    display: block;               /* ????????*/
+    padding-top: 7px;
+    padding-left: 13px;
+    padding-bottom: 9px;
+    padding-right: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    color: #B4977B;
+  }
+
+  /* content */
+
+  .content-container {
+    display: grid;
+    grid-template-columns: 300px 517px 1fr;
+    column-gap: 133px;
+  }
+
+  .content__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 162px;
+  }
+
+  .content__heading {
+    font-size: 64px;
+    line-height: 77px;
+    margin: 0;
+  }
+
+  .content__text {
+    margin-bottom: 40px;
+    padding: 0;
+    color: #050215;
+    line-height: 32px;
+    opacity: 0.75;
+  }
+
+  .content__image {
+    z-index: 1;
+    grid-column: 2/3;
+    display: block;
+    margin-top: -180px;
+    width: 517px;
+    height: auto;
+    background-color: #B4977B;
+  }
+
+  .content__button {
+    width: 178px;
+    height: 60px;
+    padding: 14px 30px;
+    border-radius: 35px;
+  }
+
+  /* pagination*/
+
+  .pagination__wrapper {
+    grid-column: 1/2;
   }
