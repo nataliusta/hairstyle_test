@@ -221,7 +221,7 @@
   }
   
   .content__button:focus {
-    opacity: 0.8;
+    opacity: 0.5;
   }
   
   .content__button:active {
@@ -286,6 +286,18 @@
     background-color: #FFFFFF;
     border: 2px solid #B4977B;
     border-radius: 45%;
+  }
+
+  .page-footer__button:hover {
+    opacity: 0.8;
+  }
+  
+  .page-footer__button:focus {
+    opacity: 0.5;
+  }
+  
+  .page-footer__button:active {
+    opacity: 0.5;
   }
 
   .social-list {
