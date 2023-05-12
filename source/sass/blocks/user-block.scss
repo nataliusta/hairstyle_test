@@ -1,0 +1,34 @@
+.user-block__user-link {
+  position: relative;
+  display: block;
+  min-width: 24px;
+  min-height: 24px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 6px;
+}
+
+.user-block__user-link:hover .user-icon {
+  fill: $color-dark-brown;
+}
+
+.user-block__user-link:focus {
+  fill: $color-dark-brown;
+  border-radius: 8px;
+}
+
+.user-block__user-link:active {
+  fill: $color-dark-brown;
+  opacity: 0.3;
+}
+
+.user-block__item {
+  margin: auto;
+  fill: $color-grey-900;
+}
+
+.user-block {
+  position: relative;
+  margin-right: 35px;
+}

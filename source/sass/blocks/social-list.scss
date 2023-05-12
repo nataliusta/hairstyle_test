@@ -1,0 +1,30 @@
+.social-list {
+  grid-column: 2/3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 386px;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.social-list__link {
+  color: $color-grey-900;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.social-list__link:hover,
+.social-list__link:focus,
+.social-list__link:active {
+  color: $color-brown;
+}
+
+.social-list__link:active {
+  opacity: 0.3;
+}

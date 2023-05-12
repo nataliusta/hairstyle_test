@@ -1,0 +1,10 @@
+.image__text {
+  position: absolute;
+  content: "";
+  left: 540px;
+  bottom: 65px;
+  z-index: 2;
+  font-size: 28px;
+  line-height: 34px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=image.css.map */

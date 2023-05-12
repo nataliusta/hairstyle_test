@@ -1,0 +1,29 @@
+.main-nav__wrapper {
+  display: grid;
+  grid-template-columns: 300px 517px 1fr 30px;
+  column-gap: 65px;
+  padding: 61px 163px 0 101px;
+  align-items: center;
+}
+
+.main-nav__logo {
+  grid-column: 1/2;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+.main-nav__list {
+  grid-column: 3/4;
+  display: flex;
+  justify-content: space-between;
+  width: 520px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-nav__user-block {
+  grid-column: 4/5;
+  align-items: center;
+}

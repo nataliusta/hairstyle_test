@@ -1,0 +1,15 @@
+.content-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 300px 517px 1fr;
+  column-gap: 133px;
+  margin-bottom: 15px;
+}
+
+.content-container::after {
+  position: absolute;
+  content: url("../img/rectangle.png");
+  bottom: 45px;
+  left: 433px;
+  z-index: 1;
+}

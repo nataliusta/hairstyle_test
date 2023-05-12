@@ -1,17 +1,12 @@
 html {
+  width: 100%;
   height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-width: 320px;
-  margin: 0;
-  font-family: $main-regular-font;
-  font-style: normal;
-  background-color: $color-white;
-  list-style-type: none;
-  text-decoration: none;
+  margin: 0 auto;
 }
 
 *,

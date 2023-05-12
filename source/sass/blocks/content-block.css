@@ -1,0 +1,71 @@
+.content-block__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 165px;
+}
+
+.content-block__heading {
+  position: relative;
+  font-size: 64px;
+  line-height: 77px;
+  margin: 0;
+}
+
+.content-block__heading::after {
+  position: absolute;
+  width: 116px;
+  height: 116px;
+  content: url("../img/pattern.png");
+  top: -20px;
+  right: -215px;
+  z-index: 1;
+}
+
+.content-block__text {
+  position: relative;
+  margin-bottom: 40px;
+  padding: 0;
+  color: #050215;
+  line-height: 32px;
+  opacity: 0.75;
+}
+
+.content-block__text::after {
+  position: absolute;
+  width: 116px;
+  height: 116px;
+  content: url("../img/pattern.png");
+  top: 170px;
+  left: 380px;
+  z-index: 1;
+}
+
+.content-block__image {
+  z-index: 1;
+  grid-column: 2/3;
+  display: block;
+  margin-top: -180px;
+  width: 517px;
+  height: auto;
+  background-color: #B4977B;
+}
+
+.content-block__button {
+  width: 178px;
+  height: 60px;
+  padding: 14px 30px;
+  border-radius: 35px;
+}
+
+.content-block__button:hover {
+  opacity: 0.8;
+}
+
+.content-block__button:focus {
+  opacity: 0.5;
+}
+
+.content-block__button:active {
+  opacity: 0.5;
+}/*# sourceMappingURL=content-block.css.map */

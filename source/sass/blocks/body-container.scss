@@ -1,0 +1,12 @@
+.body-container {
+  display: flex;
+  flex-direction: column;
+  width: 1920px;
+  min-height: 100%;
+  margin: 0 auto;
+  font-family: $added-regular-font;
+  font-size: 18px;
+  line-height: 22px;
+  color: $color-grey-900;
+  background-color: $color-white;
+}
