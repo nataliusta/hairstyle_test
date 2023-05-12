@@ -140,15 +140,15 @@ body {
 
 .site-list__link:hover,
 .site-list__link:focus,
-.site-list__link:active  {
-color: #B4977B;
+.site-list__link:active {
+  color: #B4977B;
 }
 
 .site-list__link:active {
   opacity: 0.3;
 }
 
-.site-list__link--current {  
+.site-list__link--current {
   display: block;               /* ????????*/
   padding-top: 7px;
   padding-left: 13px;
@@ -224,7 +224,6 @@ color: #B4977B;
 
 .content-container::after {
   position: absolute;
-  content: "";
   content: url("../img/rectangle.png");
   bottom: 45px;
   left: 433px;
@@ -266,7 +265,6 @@ color: #B4977B;
 
 .content__text::after {
   position: absolute;
-  content: "";
   width: 116px;
   height: 116px;
   content: url("../img/pattern.png");
@@ -374,12 +372,10 @@ color: #B4977B;
   position: relative;
   display: grid;
   grid-template-columns: 380px 386px 1fr;
-  
 }
 
 .page-footer__wrapper::after {
   position: absolute;
-  content: "";
   width: 116px;
   height: 116px;
   content: url("../img/pattern.png");
@@ -436,8 +432,8 @@ color: #B4977B;
 
 .social-list__link:hover,
 .social-list__link:focus,
-.social-list__link:active  {
-color: #B4977B;
+.social-list__link:active {
+  color: #B4977B;
 }
 
 .social-list__link:active {
