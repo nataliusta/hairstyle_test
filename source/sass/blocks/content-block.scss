@@ -1,3 +1,14 @@
+.content-block__header {
+  position: absolute;
+  content: "";
+  left: 540px;
+  bottom: 65px;
+  z-index: 2;
+  font-size: 28px;
+  line-height: 34px;
+  color: $color-white;
+}
+
 .content-block__wrapper {
   display: flex;
   flex-direction: column;
