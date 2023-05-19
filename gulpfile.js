@@ -1,19 +1,19 @@
 const gulp = require('gulp');
-//import plumber from 'gulp-plumber';
-const sass = require ('gulp-sass');
-import sourcemaps from 'gulp-sourcemaps';
-//import postcss from 'gulp-postcss';
-//import autoprefixer from 'autoprefixer';
-//import browser from 'browser-sync';
-//import csso from 'postcss-csso';
-//import rename from 'gulp-rename';
-//import htmlmin from 'gulp-htmlmin';
-//import terser from 'gulp-terser';
-//import squoosh from 'gulp-libsquoosh';
-//import svgo from 'gulp-svgmin';
-//import svgstore from 'gulp-svgstore';
-//import del from 'del';
-//import watch from 'gulp-watch';
+//const plumber = require('gulp-plumber');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+//const postcss = require('gulp-postcss');
+//const autoprefixer = require('autoprefixer');
+//const browser = require('browser-sync');
+//const csso = require('postcss-csso');
+//const rename = require('gulp-rename');
+//const htmlmin = require('gulp-htmlmin');
+//const terser = require('gulp-terser');
+//const squoosh = require('gulp-libsquoosh');
+//const svgo = require('gulp-svgmin');
+//const svgstore = require('gulp-svgstore');
+//const del = require('del');
+//const watch = require('gulp-watch');
 
 gulp.task('sass-compile', function(){
     return gulp.src('./sass/**/*.scss')
@@ -33,7 +33,7 @@ const watcher = () => {
 
   // default
 
-  export default gulp.series(
+  /*export default gulp.series(
     clean,
     copy,
     copyImages,
@@ -48,4 +48,6 @@ const watcher = () => {
     gulp.series(
       server,
       watcher
-    ));
+    ));*/
+
+    gulp.task('default', gulp.series('sass-compile'));
