@@ -24,8 +24,27 @@
     "stylelint": "^15.6.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp"
   },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all",
+    "not < 0.25%"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.scss"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nataliusta/hairstyle_test.git"
@@ -35,5 +54,9 @@
   "bugs": {
     "url": "https://github.com/nataliusta/hairstyle_test/issues"
   },
-  "homepage": "https://github.com/nataliusta/hairstyle_test#readme"
+  "homepage": "https://github.com/nataliusta/hairstyle_test#readme",
+  "engines": {
+    "node": "^16"
+  },
+  "type": "module"
 }
